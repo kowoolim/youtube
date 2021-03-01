@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color:  #f2f2f2;
+  color: #4d4d4d;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color :  color: #f2f2f2;
+  color: #f2f2f2;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #f2f2f2;
+}
+
+.aside {
+  background-color: #f2f2f2;
+  padding: 5px;
+  color: #4d4d4d;
+  text-align: center;
+  font-size: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #f2f2f2;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><center> L e t 's  Y o u t u b e </center></h1>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li><a href="address/"><center>회원정보</center></a></li>
+      <li><a href="member/"><center>회원관리</center></a></li>
+      <li><a href="guestbook/"><center>게시판</center></a></li>
+      <li><a href="youtube/"><center>예측하기</center></a></li>
+      <li><a href="survey/"><center>유튜브설문</center></a></li>
+    </ul>
+  </div>
+
+<div class="col-6 col-s-9">
+    <img src="https://cdn.pixabay.com/photo/2018/06/16/15/24/youtube-icon-3478912_960_720.jpg">
+</div>
+
+  <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>예측하기</h2>
+      <p>유튜브 정보를 기반으로 시청자의 채널을 예측해줍니다</p>
+      <h2>유튜브설문</h2>
+      <p>최고의 유튜브 채널을 선택하세요</p>
+      <h2>게시판</h2>
+      <p>유튜브 채널에 대해 대화해보세요</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p><a href="https://www.youtube.com/">youtube 보러가기</a></p>
+</div>
+</body>
+</html>

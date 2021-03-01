@@ -1,0 +1,64 @@
+<style>
+table, th, td {
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 16px;
+  color: black;
+}
+</style>
+
+<h1><center>예측하기</center></h1>
+<form action="/youtube/predict">
+<center>
+<table style="width:100%" >
+	<tr style="background-color:'#f2f2f2">
+    <th style="width:40%"></th>
+    <th style="width:60%">선호 채널의 콘텐츠 예측하기</th>
+  </tr>
+  <tr>
+    <td><center>채널의 구독자수</center></td>
+    <td><input type="text" name="view_sub"></td>
+  </tr>
+  <tr>
+    <td><center>한 영상 당 본인의 조회수</center></td>
+    <td><input type="text" name="video_nums"></td>
+  </tr>
+  <tr>
+    <td><center>유튜버 성별</center></td>
+    <td>
+    <input type="radio" id="male" name="male" value="1">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="male" value="0">
+    <label for="female">Female</label><br>
+    </td>
+  </tr>
+  <tr>
+    <td><center>여러명/동물 유튜버</center></td>
+    <td>
+    <input type="radio" id="multisex1" name="multisex" value="1">
+    <label for="multisex1">O</label><br>
+    <input type="radio" id="multisex2" name="multisex" value="0">
+    <label for="multisex2">X</label><br>
+    </td>
+  </tr>
+</table>
+</center>
+<div style="float:right; margin:10px;">
+    <input type="submit" value="확인">
+    <button type="button" onclick="location.href = '/';">HOME</button>
+</div>
+
+<style>
+.myDiv {
+  border: 5px outset black;
+  background-color: white;
+  text-align: center;
+}
+</style>
+
+<h3 style="margin:50x;">채널 예측 결과</h3>
+<div class="myDiv">
+  <h2>당신이 선호하는 채널의 콘텐츠는 {{contents}} 입니다</h2>
+  <p><a href = "https://www.youtube.com/"> 유튜브 바로가기 </a></p>
+</div>
+</form>
